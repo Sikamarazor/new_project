@@ -1,0 +1,27 @@
+<ul id="ul">
+
+    <li id="li"><a id="a" ui-sref="home" href="#">Home</a></li>
+    <li id="li"><a id="a" ui-sref="carBrands" href="#">Car brands</a></li>
+    <li id="li"><a id="a" ui-sref="News" href="#">News</a></li>
+    <li id="li"><a id="a" class="profile" ui-sref="profile" href="#">Profile</a></li>
+</ul>
+
+<h1> </h1>
+
+    <div class="input-group search-bar">
+            <input type="text" ng-model="car._id"  placeholder="Insert car id" />
+            
+    </div>
+
+    <div class="input-group search-bar">
+        <input type="text" ng-model="car.name"  placeholder="Insert car brand" />
+        
+    </div>
+
+<button ng-click="insertCar(car)">Insert</button>
+
+<div ng-show="insert">
+    <p> Inserted car </p>
+    <p> {{ca.data.name}} </p>
+    <p> {{ca.statusText}}
+</div>

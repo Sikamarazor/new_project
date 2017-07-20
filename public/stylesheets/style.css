@@ -1,0 +1,41 @@
+#ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: lightcoral;
+}
+
+#li {
+    float: left;
+}
+#li #a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+
+}
+#li #a:hover{
+    background-color: lightblue;
+}
+body{
+    background-color: lightblue;
+}
+li a.home {
+    background-color: #4CAF50;
+    color: white;
+}
+li a.brands {
+    background-color: #4CAF50;
+    color: white;
+}
+li a.news {
+    background-color: #4CAF50;
+    color: white;
+}
+li a.profile {
+    background-color: #4CAF50;
+    color: white;
+}

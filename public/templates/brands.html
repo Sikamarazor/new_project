@@ -1,0 +1,86 @@
+<div class="header">
+  <div id="site_title"><a href="#" ui-sref="home"><img src="data:image/jpg;base64,{{photo}}" alt="" style="width:100px"></a></div>
+  <!-- Main Menu -->
+  <ol id="menu">
+    <li class="active_menu_item"><a href="#" ui-sref="home">Home</a>
+      <!-- sub menu -->
+      <ol>
+        <li><a href="#" ui-sref="coolSlider">Cool Slider</a></li>
+        <li><a href="#" ui-sref="longSlider">Long Slider</a></li>
+        <li><a href="#" ui-sref="fullSlider">Fullscreen Slider</a></li>
+        <li><a href="image-frontpage.html">Static Image</a></li>
+      </ol>
+    </li>
+    <!-- END sub menu -->
+    <li><a href="#">Brands</a>
+      <!-- sub menu -->
+      <ol>
+        <li><a href="" ng-click="selectedCar(Audi)">Audi</a></li>
+        <li><a href="" ng-click="selectedCar(BMW)">BMW</a></li>
+        <li><a href="" ng-click="selectedCar(Mercedes-Benz)">Mercedes-Benz</a></li>
+        <li><a href="" ui-sref="brands">More brands...</a></li>
+      </ol>
+    </li>
+    <!-- END sub menu -->
+    <li><a href="#">Galleries</a>
+      <!-- sub menu -->
+      <ol>
+        <li><a href="#">Simple</a></li>
+        <li><a href="#">Filterable</a></li>
+        <li><a href="#">Fade Scroll</a></li>
+        <li><a href="#">Video</a></li>
+        <li class="last"><a href="#">PhotoGrid</a></li>
+      </ol>
+    </li>
+    <!-- END sub menu -->
+    <li><a href="contact.html">Contact</a></li>
+  </ol>
+</div>
+<!-- END header -->
+<div id="container">
+  <!-- tab panes -->
+  <div ng-repeat="x in car.data" ng-click="selectedCar(x.name)">
+
+  <ul class="cars_links">
+    <li><a href=""><strong>{{x.name}}</strong></a></li>
+  </ul>
+   </div>
+ 
+  <div style="clear:both; height: 40px"></div>
+</div>
+<!-- END container -->
+<div id="footer">
+  <!-- First Column -->
+  <div class="one-fourth">
+    <h3>Useful Links</h3>
+    <ul class="footer_links">
+      <li><a href="#">...</a></li>
+      <li><a href="#">....</a></li>
+      <li><a href="#">....</a></li>
+      <li><a href="#">...</a></li>
+    </ul>
+  </div>
+  <!-- Second Column -->
+  <div class="one-fourth">
+    <h3>Terms</h3>
+    <ul class="footer_links">
+      <li><a href="#">...</a></li>
+      <li><a href="#">....</a></li>
+      <li><a href="#">..</a></li>
+      <li><a href="#">...</a></li>
+    </ul>
+  </div>
+  <!-- Third Column -->
+  <div class="one-fourth">
+    <h3>Information</h3>
+    This website is about cars in general, all the info you need to know about cars.
+    <div id="social_icons"> Theme by <a href="#" style="color: white">CssTemplateHeaven</a><br>
+      Photos © <a href="#" style="color: white">Lefa Nyathi</a> </div>
+  </div>
+  <!-- Fourth Column -->
+  <div class="one-fourth last">
+    <h3>Socialize</h3>
+    <img src="/images/img/icon_fb.png" alt=""> <img src="/images/img/icon_twitter.png" alt=""> <img src="/images/img/icon_in.png" alt=""> </div>
+  <div style="clear:both"></div>
+</div>
+<!-- END footer -->

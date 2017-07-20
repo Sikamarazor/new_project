@@ -1,0 +1,14 @@
+<ul id="ul">
+
+    <li id="li"><a id="a" ui-sref="home" href="#">Home</a></li>
+    <li id="li"><a id="a" class="brands" ui-sref="carBrands" href="#">Car brands</a></li>
+    <li id="li"><a id="a" ui-sref="News" href="#">News</a></li>
+    <li id="li"><a id="a" ui-sref="profile" href="#">Profile</a></li>
+</ul>
+
+<h2> Car brands </h2>
+<div ng-repeat="x in car.data">
+
+  <p> {{x.name}} </p>
+
+</div>
